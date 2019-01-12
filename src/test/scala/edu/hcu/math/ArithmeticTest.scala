@@ -1,4 +1,4 @@
-package com.decooda.math
+package edu.hcu.math
 
 import org.scalatest.FunSuite
 
