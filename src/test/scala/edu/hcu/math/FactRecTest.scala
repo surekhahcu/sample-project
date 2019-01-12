@@ -6,7 +6,7 @@ class FactRecTest extends FunSuite {
 
   test("Factorial of a number") {
     val result = fact.factorial(4)
-    val expectResult = 29
+    val expectResult = 24
     assert(result === expectResult)
   }
 }
