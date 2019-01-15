@@ -64,8 +64,23 @@ class Arithmetic {
       case x :: tail => x + sumL(tail)
     }
   }
+  //7.sum of two options
+  def sumOP(opt1: Option[Int], opt2: Option[Int]): Option[Int] = {
+    opt1 match {
+      case Some(n1) =>
+        opt2 match {
+          case Some(n2) => Some(n2 + n1)
+          case None => Some(n1)
+        }
+      case None =>
+        opt2
+    }
+  }
 
-  /*merging two map*/
+
+
+
+/*merging two map*/
   def mergeMap(map1: Map[String, Int], map2: Map[String, Int]): Map[String, Int] = {
     val merge = (map1.keySet ++ map2.keySet).toList.map { key => (key, (map1.getOrElse(key, 0) + map2.getOrElse(key, 0))) }.toMap
 
