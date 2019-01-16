@@ -63,8 +63,8 @@ class ArithmeticTest extends FunSuite {
   }
   //7th
   test("Sum of two Options") {
-    val result=arth.sumOP(Some(2),None)
-    val expectResult =Some(2)
+    val result = arth.sumOP(Some(2), None)
+    val expectResult = Some(2)
     assert(result === expectResult)
   }
 
